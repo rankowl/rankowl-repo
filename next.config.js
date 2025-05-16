@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  output: 'standalone',
   images: {
     unoptimized: true,
     domains: ['vercel.com'],
   },
-  trailingSlash: true,
+  experimental: {
+    appDir: true
+  }
 };
 
 module.exports = nextConfig; 
