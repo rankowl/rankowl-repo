@@ -5,6 +5,23 @@ const nextConfig = {
   images: {
     unoptimized: true,
     domains: ['vercel.com'],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/',
+      },
+    ]
   }
 };
 
