@@ -83,7 +83,12 @@ export default function Home() {
               width={36}
               height={36}
               priority
-              style={{ width: '36px', height: '36px' }}
+              style={{ 
+                width: '36px', 
+                height: '36px',
+                display: 'block',
+                objectFit: 'contain'
+              }}
             />
           </div>
           <span style={{ fontSize: '1.3rem', fontWeight: 600, color: '#222', marginLeft: 10, letterSpacing: '0.01em' }}>Rankowl</span>
