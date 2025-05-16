@@ -2,6 +2,7 @@
 
 import './globals.css';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Rankowl - AI that works with your data',
@@ -81,8 +82,14 @@ export default function Home() {
       <div className="navbar">
         <div className="navbar-left">
           <div className="navbar-logo">
-            {/* Actual SVG logo */}
-            <img src="/logo-trans.svg" alt="Rankowl Logo" width={36} height={36} />
+            <Image 
+              src="/logo-trans.svg"
+              alt="Rankowl Logo"
+              width={36}
+              height={36}
+              priority
+              style={{ width: '36px', height: '36px' }}
+            />
           </div>
           <span style={{ fontSize: '1.3rem', fontWeight: 600, color: '#222', marginLeft: 10, letterSpacing: '0.01em' }}>Rankowl</span>
           <div className="navbar-links">
