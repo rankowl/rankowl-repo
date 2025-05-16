@@ -4,11 +4,6 @@ import './globals.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-export const metadata = {
-  title: 'Rankowl - AI that works with your data',
-  description: 'Connect apps, documents and databases with Rankowl AI',
-};
-
 export default function Home() {
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
